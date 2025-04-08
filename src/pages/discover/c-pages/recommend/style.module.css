@@ -1,0 +1,15 @@
+.content {
+  background-color: #fff;
+  display: flex;
+}
+
+.recommendLeft {
+  /* padding: 20px; */
+  width: 729px;
+}
+
+.recommendRight {
+  width: 250px;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+}

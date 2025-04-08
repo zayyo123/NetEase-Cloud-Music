@@ -1,0 +1,116 @@
+.AppHeaderWrapper {
+  height: 75px;
+  background-color: #242424;
+  font-size: 14px;
+}
+
+.AppHeaderWrapper .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AppHeaderWrapper .divider {
+  height: 5px;
+  background-color: #c20c0c;
+}
+
+.HeaderLeft {
+  display: flex;
+}
+
+.HeaderLeft .logo {
+  display: block;
+  width: 176px;
+  height: 70px;
+  background-position: 0 0;
+  text-indent: -9999px;
+}
+
+.HeaderLeft .selectList {
+  display: flex;
+  line-height: 70px;
+}
+
+.HeaderLeft .selectItem {
+  position: relative;
+}
+
+.HeaderLeft .selectItem a {
+  display: block;
+  padding: 0 20px;
+  color: #ccc;
+}
+
+.HeaderLeft .selectItem:last-of-type a {
+  position: relative;
+}
+
+.HeaderLeft .selectItem:hover a,
+.HeaderLeft .active {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+}
+
+.HeaderLeft .active .icon {
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  bottom: -1px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-position: -226px 0;
+}
+
+.HeaderRight {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.HeaderRight .search {
+  width: 158px;
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.HeaderRight .search input::placeholder {
+  font-size: 12px;
+}
+
+.HeaderRight .center {
+  width: 90px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #666;
+  border-radius: 16px;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.selectItem a.active {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.selectItem a.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0px; /* 根据需要调整位置 */
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 7px solid #c20c0c;
+  transform: translateX(-50%);
+}
+
+.login {
+  cursor: pointer;
+}

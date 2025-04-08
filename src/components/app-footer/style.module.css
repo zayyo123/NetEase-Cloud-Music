@@ -1,0 +1,116 @@
+.footerWrapper {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  height: 325px;
+  overflow: hidden;
+  border-top: 1px solid #d3d3d3;
+  background: #f2f2f2;
+}
+
+/* 入口图标部分 */
+.enter {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  transition: background 0.3s;
+}
+
+/* AI Logo */
+.aiMusic {
+  background-image: url('../../assets/img/foot/aiLogo.png');
+}
+.aiMusic:hover {
+  background-image: url('../../assets/img/foot/aiLogoHover.png');
+}
+
+/* 云推歌 */
+.cloudSong {
+  background-image: url('../../assets/img/foot/cloudSong.png');
+}
+.cloudSong:hover {
+  background-image: url('../../assets/img/foot/cloudSongHover.png');
+}
+
+/* X Studio */
+.xStudio {
+  background-image: url('../../assets/img/foot/xStudio.png');
+}
+.xStudio:hover {
+  background-image: url('../../assets/img/foot/xStudioHover.png');
+}
+
+/* 其他 logo 统一使用 foot_enter_new2.png */
+.openPlatform {
+  background-image: url('../../assets/img/foot/foot_enter_new2.png');
+  background-size: 220px 220px;
+  background-position: -170px -5px;
+  transition: background-position 0s;
+}
+.openPlatform:hover {
+  background-position: -5px -115px;
+}
+
+.trade {
+  background-image: url('../../assets/img/foot/foot_enter_new2.png');
+  background-position: -5px -170px;
+  background-size: 220px 220px;
+  transition: background-position 0s;
+}
+
+.trade:hover {
+  background-position: -60px -170px;
+}
+.auth {
+  background-image: url('../../assets/img/foot/foot_enter_new2.png');
+  background-position: -60px -60px;
+  background-size: 220px 220px;
+  transition: background-position 0s;
+}
+
+.auth:hover {
+  background-position: -115px -5px;
+}
+.reward {
+  background-image: url('../../assets/img/foot/foot_enter_new2.png');
+  background-position: -170px -115px;
+  background-size: 220px 220px;
+  transition: background-position 0s;
+}
+.reward:hover {
+  background-position: -60px -115px;
+}
+
+.tt {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.jubao {
+  margin-right: 14px;
+}
+.links {
+  padding-top: 60px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+.link a {
+  margin: 0 5px;
+}

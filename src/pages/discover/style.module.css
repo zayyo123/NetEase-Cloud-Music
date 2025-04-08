@@ -1,0 +1,31 @@
+/* style.module.css */
+
+/* DiscoverWrapper 对应的样式 */
+.discoverWrapper .top {
+  height: 30px;
+  background-color: #c20c0c;
+}
+
+/* TopMenu 对应的样式 */
+.topMenu {
+  display: flex;
+  padding-left: 180px;
+  position: relative;
+  top: -4px;
+}
+
+.topMenu .item a {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 13px;
+  margin: 7px 17px 0;
+  color: #fff;
+}
+
+.topMenu .item a:hover,
+.topMenu .item a.active {
+  text-decoration: none;
+  background-color: #9b0909;
+  border-radius: 20px;
+}

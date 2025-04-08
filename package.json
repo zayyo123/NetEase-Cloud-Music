@@ -1,0 +1,58 @@
+{
+  "name": "netease-cloud-music",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint:check": "eslint . --ext .ts,.tsx",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.0.0",
+    "@reduxjs/toolkit": "^2.6.1",
+    "antd": "^5.24.6",
+    "axios": "^1.8.4",
+    "classnames": "^2.5.1",
+    "consola": "^3.4.2",
+    "immutable": "^5.1.1",
+    "normalize.css": "^8.0.1",
+    "parse-json": "^8.2.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.4.0",
+    "react-scripts": "^5.0.1",
+    "vite-plugin-style-import": "^2.0.0",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@types/mockjs": "^1.0.10",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "mockjs": "^1.1.0",
+    "prettier": "^3.5.3",
+    "typescript": "^4.9.5",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  },
+  "resolutions": {
+    "react-is": "18.3.1"
+  }
+}

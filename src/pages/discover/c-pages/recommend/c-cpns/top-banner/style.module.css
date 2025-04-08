@@ -1,0 +1,115 @@
+:root {
+  --banner-height: 270px;
+  --banner-width: 984px;
+  --banner-left-width: 730px;
+  --banner-right-width: 254px;
+  --text-color-light: rgb(235, 231, 231);
+  --text-color-gray: #8d8d8d;
+  --background-dark: rgb(18, 3, 3);
+  --transition-time: 0.3s;
+}
+
+.bannerWrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 6000px; /* 可以考虑改为 'cover' 提高性能 */
+  transition: var(--transition-time);
+}
+
+.banner {
+  width: var(--banner-width);
+  min-width: var(--banner-width); /* 防止被压缩 */
+  height: var(--banner-height);
+  background-color: var(--background-dark);
+  position: relative;
+  display: flex;
+}
+
+.bannerLeft {
+  width: var(--banner-left-width);
+}
+
+.bannerRight {
+  width: var(--banner-right-width);
+  height: var(--banner-height);
+  background: url('@/assets/img/download.png') no-repeat;
+  background-size: cover; /* 保证背景图适应容器 */
+}
+
+.downloadClient {
+  display: block;
+  width: 215px;
+  height: 56px;
+  margin: 186px 0 0 19px;
+  background-position: 0 9999px; /* 初始状态隐藏背景 */
+  text-indent: -9999px; /* 隐藏文本 */
+}
+
+.downloadClient:hover {
+  background: url('@/assets/img/download.png') 0 -290px no-repeat;
+  text-decoration: none;
+}
+
+.bannerRight p {
+  margin: 10px auto;
+  text-align: center;
+  color: var(--text-color-gray);
+}
+
+.bannerItem {
+  overflow: hidden;
+  height: var(--banner-height);
+}
+
+.image {
+  width: 100%;
+  height: auto; /* 添加以保持图片比例 */
+  display: block; /* 消除图片底部间隙 */
+}
+
+.iconfont {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: var(--text-color-light);
+  font-size: 80px;
+  font-weight: bolder;
+  background: url('@/assets/img/banner_sprite.png') 0 9999px no-repeat; /* 初始状态隐藏 */
+  cursor: pointer; /* 直接应用而不是在悬停时才改变 */
+}
+
+.iconPrev {
+  left: -80px;
+  background-position: 0 -360px;
+}
+
+.iconNext {
+  right: -350px;
+  background-position: 0 -508px;
+}
+
+/* 添加媒体查询以实现响应式设计 */
+@media screen and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    min-width: auto;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bannerLeft,
+  .bannerRight {
+    width: 100%;
+  }
+
+  .iconPrev {
+    left: 10px;
+  }
+
+  .iconNext {
+    right: 10px;
+  }
+}
