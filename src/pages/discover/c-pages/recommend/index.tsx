@@ -20,6 +20,7 @@ const recommend: FC<IProps> = () => {
   })
   return (
     <div>
+      {/* 轮播图 */}
       <TopBanner />
       <div className={`${styles.content} wrap-v2`}>
         <div className={styles.recommendLeft}></div>
