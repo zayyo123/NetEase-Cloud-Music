@@ -386,3 +386,113 @@ Mock.mock('/api/banner', 'get', {
     }
   ]
 })
+
+Mock.mock('/api/personalized?limit=8', 'get', {
+  code: 200,
+  data: [
+    {
+      id: 3229941142,
+      type: 0,
+      name: '【R&B】在璀璨星河下微醺 喝杯小酒吧！',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/lg74fwVdK1CnG1_VLBIM6Q==/109951166711664533.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1743178785497,
+      playCount: 37262204,
+      trackCount: 101,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 893153237,
+      type: 0,
+      name: '粤语男声：我爱你依旧如初不曾改变',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/Xd6h-xOoPj2yTUuQXOhyCQ==/18612532836990988.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1738758187442,
+      playCount: 29599912,
+      trackCount: 100,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 934870683,
+      type: 0,
+      name: '国语说唱也很抒情，副歌也美',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/0N-tqsnwkAekwexX2p4NcQ==/109951169687668694.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1742359547521,
+      playCount: 29732556,
+      trackCount: 867,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 69860949,
+      type: 0,
+      name: '『90后』小时候【所谓非主流】的经典神曲',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/2rux5LnJey75tm9Md-9D-Q==/2890616070443534.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1690945575312,
+      playCount: 29853878,
+      trackCount: 212,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 7487805161,
+      type: 0,
+      name: '宝藏挖掘机|分享好音乐和金曲',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/whuiVDHL3a-OE8q4mcj5xA==/109951169484809780.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1744077849285,
+      playCount: 99710176,
+      trackCount: 146,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 171037362,
+      type: 0,
+      name: '香港电影中的50首经典歌曲 [追忆录]',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/aRMEx-fiTudOmPIhkOe41g==/109951165493447833.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1698595431351,
+      playCount: 45640940,
+      trackCount: 51,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 2748492595,
+      type: 0,
+      name: '欧美万评优质女声•萦绕耳畔忆于心间',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/ptx2Jf4PZl3oNLxv4NiADg==/109951164018765577.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1742169668406,
+      playCount: 40226000,
+      trackCount: 170,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    },
+    {
+      id: 2474537199,
+      type: 0,
+      name: '若是心怀旧梦 就别再无疾而终',
+      copywriter: '',
+      picUrl: 'https://p2.music.126.net/OrXO5yyb3SHJyZWNfCnbfw==/109951163676024440.jpg',
+      canDislike: true,
+      trackNumberUpdateTime: 1744085355588,
+      playCount: 26781868,
+      trackCount: 512,
+      highQuality: false,
+      alg: 'alg_high_quality'
+    }
+  ]
+})

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import {
-  getBanner,
+  getTopBanner,
   getHotRecommend,
   getMVList,
   getNewAlbum,
@@ -10,7 +10,7 @@ import {
 
 // 创建异步thunk，用于获取轮播图数据
 export const fetchBannersDataAction = createAsyncThunk('banners', async () => {
-  const { data } = await getBanner()
+  const { data } = await getTopBanner()
   // console.log(data)
   return data
 })
@@ -18,6 +18,7 @@ export const fetchBannersDataAction = createAsyncThunk('banners', async () => {
 // 创建异步thunk，用于获取热门推荐数据
 export const fetchHotDataAction = createAsyncThunk('hot', async (args, { dispatch }) => {
   const { data } = await getHotRecommend(8)
+
   return data
 })
 
@@ -95,7 +96,7 @@ const recommendSlice = createSlice({
       })
       // 当fetchHotDataAction.fulfilled被触发时，将payload.result赋值给state.hot
       .addCase(fetchHotDataAction.fulfilled, (state, { payload }) => {
-        state.hot = payload.result
+        state.hot = payload
       })
       // 当fetchNewSongListAction.fulfilled被触发时，将payload赋值给state.newSongList
       .addCase(fetchNewSongListAction.fulfilled, (state, { payload }) => {

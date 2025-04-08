@@ -1,8 +1,8 @@
 import request from '..'
 
-export function getBanner() {
+export function getTopBanner() {
   return request.get({
-    url: '/banner',
+    url: '/banner'
   })
 }
 
@@ -10,8 +10,8 @@ export function getHotRecommend(limit = 30) {
   return request.get({
     url: '/personalized',
     params: {
-      limit,
-    },
+      limit
+    }
   })
 }
 
@@ -19,23 +19,23 @@ export function getNewAlbum(limit = 30) {
   return request.get({
     url: '/album/list',
     params: {
-      limit,
-    },
+      limit
+    }
   })
 }
 
-export function getRankList(id: number) {
+export function getTopList(id: number) {
   return request.get({
     url: '/playlist/detail',
     params: {
-      id,
-    },
+      id
+    }
   })
 }
 
 export function getMVList() {
   return request.get({
-    url: '/personalized/mv',
+    url: '/personalized/mv'
   })
 }
 
@@ -43,8 +43,8 @@ export function getNewSongs(limit = 30) {
   return request.get({
     url: '/personalized/newsong',
     params: {
-      limit,
-    },
+      limit
+    }
   })
 }
 
@@ -52,7 +52,26 @@ export function getSongDetail(ids: number) {
   return request.get({
     url: '/song/detail',
     params: {
-      ids,
-    },
+      ids
+    }
+  })
+}
+
+export function getArtistList(limit: number, cat: string) {
+  return request.get({
+    url: '/artist/list',
+    params: {
+      cat,
+      limit
+    }
+  })
+}
+
+export function getRankList(id: number) {
+  return request.get({
+    url: '/playlist/detail',
+    params: {
+      id
+    }
   })
 }

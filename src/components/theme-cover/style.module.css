@@ -1,0 +1,91 @@
+.themeCoverWrapper {
+  width: 140px;
+  height: 204px;
+}
+
+.hotItem {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 28px 0;
+  transition: 0.2s ease;
+  width: 140px;
+  height: 204px;
+}
+
+.itemTop {
+  width: 140px;
+  position: relative;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.itemImg {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.itemImg:hover .itemImgBox > img {
+  transition: all 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.itemImg:hover .iconfont {
+  transition: all 0.3s ease-in;
+  opacity: 1;
+}
+
+.iconfont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s ease;
+  font-size: 56px;
+  color: #f5f5f5;
+}
+
+.itemImgBox {
+  width: 140px;
+  height: 140px;
+}
+
+.itemImgBox img {
+  width: 140px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemCount {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+  height: 27px;
+  color: #ccc;
+  padding-top: 7px;
+  background: url(@/assets/img/sprite_cover.png) no-repeat;
+  background-position: 0 -537px;
+}
+.iconHeadset {
+  background: url(@/assets/img/sprite_icon.png) no-repeat;
+  float: left;
+  width: 14px;
+  height: 11px;
+  background-position: 0 -24px;
+  margin: 0px 5px 9px 10px;
+}
+
+.itemBottom {
+  font-size: 14px;
+  color: #424242;
+}
+
+.itemTitle {
+  display: flex;
+  margin-bottom: 12px;
+}
