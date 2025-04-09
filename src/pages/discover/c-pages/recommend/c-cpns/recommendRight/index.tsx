@@ -107,18 +107,15 @@ const Sidebar: React.FC = () => {
       <div className={styles.vipCard}>
         <img
           className={styles.vipCardImg}
-          id='dis-vip-card'
           src='https://music.163.com/style/web2/img/dis_vip_card.png'
           alt='VIP Card'
           data-action='openCanisher'
         />
       </div>
-
       <div className={styles.userProfile}>
         <div className={styles.myInfo}>
           <p className={styles.note}>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
           <a
-            id='index-enter-default'
             href='#'
             onClick={e => {
               e.preventDefault()
@@ -141,7 +138,7 @@ const Sidebar: React.FC = () => {
         </h3>
         <ul className={styles.singerList} id='singer-list'>
           {singers.map(singer => (
-            <li key={singer.id}>
+            <li key={singer.id} className={styles.singerItem}>
               <a href={`/user/home?id=${singer.id}`} className={styles.singerItem}>
                 <div className={styles.head}>
                   <img className={styles.headImg} src={singer.imageUrl} alt={singer.name} />
