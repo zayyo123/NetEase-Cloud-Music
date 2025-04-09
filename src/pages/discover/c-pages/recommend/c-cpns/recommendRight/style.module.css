@@ -1,0 +1,202 @@
+/* Sidebar.module.css */
+
+.sidebar {
+  /* g-sd1 equivalent */
+}
+
+/* VIP Card Section */
+.vipCard {
+  /* dis_vip_card equivalent */
+}
+
+.vipCardImg {
+  width: 250px;
+  height: 89.28px;
+  cursor: pointer;
+}
+
+.userProfile {
+}
+
+.myInfo {
+  /* n-myinfo n-myinfo-1 s-bg s-bg-1 equivalent */
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.note {
+  /* note s-fc3 equivalent */
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.loginBtn {
+  /* btn s-bg s-bg-2 f-tdn equivalent */
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #c20c0c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Singer Section */
+.singerSection {
+  /* n-singer equivalent */
+  margin-bottom: 30px;
+}
+
+.sectionHeader {
+  /* v-hd3 equivalent */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  /* f-fl equivalent */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.more {
+  /* more s-fc3 equivalent */
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.singerList {
+  /* n-enter f-cb equivalent */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.singerList li {
+  margin-bottom: 15px;
+}
+
+.singerItem {
+  /* itm f-tdn equivalent */
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.head {
+  margin-right: 10px;
+}
+
+.headImg {
+  /* j-img equivalent */
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.info {
+  /* ifo equivalent */
+}
+
+.name {
+  /* nm f-fs1 f-ib f-thide equivalent */
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 120px;
+}
+
+.description {
+  /* f-thide s-fc3 equivalent */
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px 0 0;
+  font-size: 12px;
+  max-width: 120px;
+}
+
+.applyBtn {
+  /* u-btn2 u-btn2-1 equivalent */
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* DJ Section */
+.djSection {
+  /* n-dj n-dj-1 equivalent */
+}
+
+.djList {
+  /* n-hotdj f-cb equivalent */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.djList li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.djCover {
+  /* cver equivalent */
+  margin-right: 10px;
+}
+
+.djImg {
+  /* j-img equivalent */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.djInfo {
+  /* info equivalent */
+}
+
+.djName {
+  /* nm-icn f-thide s-fc0 equivalent */
+  color: #000;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  max-width: 120px;
+}
+
+.djDescription {
+  /* f-thide s-fc3 equivalent */
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 3px 0 0;
+  font-size: 12px;
+  max-width: 120px;
+}

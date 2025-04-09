@@ -26,15 +26,17 @@ export default defineConfig({
       // 例如，将 '@components' 映射到 'src/components' 目录
       '@components': path.resolve(__dirname, 'src/components'),
       '@pages': path.resolve(__dirname, 'src/pages'),
-      'react-is': path.resolve(__dirname, 'node_modules/react-is'),
+      'react-is': path.resolve(__dirname, 'node_modules/react-is')
     }
   },
   server: {
     open: true, // 启动项目时自动打开浏览器
+    port: 7080, // 设置端口号
     proxy: {
       '/api': {
-        target: 'http://localhost:5173', // 指向本地
-        rewrite: path => path
+        target: 'http://localhost:7080', // 指向本地
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
       }
     }
   }

@@ -1042,3 +1042,89 @@ Mock.mock('/api/album/list?limit=30', 'get', {
     }
   ]
 })
+Mock.mock('/api/playlist/detail?id=19723756', 'get', {
+  code: 200,
+  data: [
+    {
+      name: '飙升榜',
+      coverImgUrl: 'https://p1.music.126.net/BaP9nrocNTL3gGThysv4eQ==/109951170091896587.jpg',
+      tracks: [
+        { name: '山峰', mainTitle: null, additionalTitle: null, id: 2690847039, pst: 0 },
+        { name: '风铃', mainTitle: null, additionalTitle: null, id: 2686272114, pst: 0 },
+        { name: '听不见的歌', mainTitle: null, additionalTitle: null, id: 2691969689, pst: 0 },
+        { name: '英雄主义', mainTitle: null, additionalTitle: null, id: 2684510360, pst: 0 },
+        { name: 'Off The Hook', mainTitle: null, additionalTitle: null, id: 2673161004, pst: 0 },
+        { name: '去远方', mainTitle: null, additionalTitle: null, id: 2668764089, pst: 0 },
+        { name: 'Only one', mainTitle: null, additionalTitle: null, id: 5341517, pst: 0 },
+        { name: '你', mainTitle: null, additionalTitle: null, id: 1406083061, pst: 0 },
+        {
+          name: 'YATO（你是唯一 ）',
+          mainTitle: 'YATO',
+          additionalTitle: '（你是唯一 ）',
+          id: 2688478492,
+          pst: 0
+        },
+        { name: '一点', mainTitle: null, additionalTitle: null, id: 2686266146, pst: 0 },
+        { name: '春雪', mainTitle: null, additionalTitle: null }
+      ]
+    },
+    {
+      name: '新歌榜',
+      coverImgUrl: 'https://p1.music.126.net/5guhqPBTcIrrhLBotgaT6w==/109951170048511751.jpg',
+      tracks: [
+        { name: '春雪', mainTitle: null, additionalTitle: null, id: 2680959706, pst: 0 },
+        { name: '风铃', mainTitle: null, additionalTitle: null, id: 2686272114, pst: 0 },
+        { name: '一点', mainTitle: null, additionalTitle: null, id: 2686266146, pst: 0 },
+        { name: '爱错', mainTitle: null, additionalTitle: null, id: 2689896166, pst: 0 },
+        { name: '烟圈', mainTitle: null, additionalTitle: null, id: 2687364563, pst: 0 },
+        { name: '英雄主义', mainTitle: null, additionalTitle: null, id: 2684510360, pst: 0 },
+        { name: '来电瑶', mainTitle: null, additionalTitle: null, id: 2690846498, pst: 0 },
+        {
+          name: 'Baby Steps (Feat. 宋雨琦)',
+          mainTitle: 'Baby Steps ',
+          additionalTitle: '(Feat. 宋雨琦)',
+          id: 2688515350,
+          pst: 0
+        },
+        { name: '卑鄙LilBaby', mainTitle: null, additionalTitle: null, id: 2686898672, pst: 0 },
+        { name: '野路', mainTitle: null, additionalTitle: null, id: 2689900204, pst: 0 },
+        { name: '我放你走', mainTitle: null, additionalTitle: null, id: 2686948803, pst: 0 }
+      ]
+    },
+    {
+      name: '热歌榜',
+      coverImgUrl: 'https://p1.music.126.net/BaP9nrocNTL3gGThysv4eQ==/109951170091896587.jpg',
+      tracks: [
+        { name: '唯一', mainTitle: null, additionalTitle: null, id: 2083785152, pst: 0 },
+        { name: '爱错', mainTitle: null, additionalTitle: null, id: 1301736461, pst: 0 },
+        { name: '春雪', mainTitle: null, additionalTitle: null, id: 2680959706, pst: 0 },
+        { name: '跳楼机', mainTitle: null, additionalTitle: null, id: 2645500113, pst: 0 },
+        { name: '于是', mainTitle: null, additionalTitle: null, id: 1303464858, pst: 0 },
+        { name: '你', mainTitle: null, additionalTitle: null, id: 1406083061, pst: 0 },
+        {
+          name: '罗生门（Follow）',
+          mainTitle: '罗生门',
+          additionalTitle: '（Follow）',
+          id: 1456890009,
+          pst: 0
+        },
+        {
+          name: '我爱你但是我要回家',
+          mainTitle: null,
+          additionalTitle: null,
+          id: 2647831829,
+          pst: 0
+        },
+        {
+          name: '如果爱忘了 (live)',
+          mainTitle: '如果爱忘了 ',
+          additionalTitle: '(Live)',
+          id: 2124385868,
+          pst: 0
+        },
+        { name: '去远方', mainTitle: null, additionalTitle: null, id: 2668764089, pst: 0 },
+        { name: '特别的人', mainTitle: null, additionalTitle: null, id: 28403111, pst: 0 }
+      ]
+    }
+  ]
+})

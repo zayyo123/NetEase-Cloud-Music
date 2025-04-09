@@ -7,14 +7,16 @@ import styles from './style.module.css' // 引入 CSS 模块
 import {
   fetchBannersDataAction,
   fetchHotDataAction,
-  fetchNewAlbumAction
+  fetchNewAlbumAction,
+  fetchRankListAction,
+  fetchNewSongListAction
 } from '@/store/modules/recommend' // 引入推荐页面的 action
 
 import TopBanner from './c-cpns/top-banner' // 引入轮播图组件
 import HotRecommend from './c-cpns/hot-recommend'
 import NewAlbum from './c-cpns/new-album'
-// import RankingList from './c-cpns/ranking-list';
-// import UserLogin from './c-cpns/user-login';
+import RankingList from './c-cpns/ranking-list'
+import Sidebar from './c-cpns/recommendRight'
 // import SettleSinger from './c-cpns/settle-singer';
 // import HotRadio from './c-cpns/hot-radio';
 
@@ -29,6 +31,8 @@ const recommend: FC<IProps> = () => {
     dispatch(fetchBannersDataAction()) // 获取轮播图数据
     dispatch(fetchHotDataAction()) // 获取热门推荐数据
     dispatch(fetchNewAlbumAction())
+    dispatch(fetchNewSongListAction())
+    dispatch(fetchRankListAction())
   })
   return (
     <div>
@@ -38,8 +42,11 @@ const recommend: FC<IProps> = () => {
         <div className={styles.recommendLeft}>
           <HotRecommend />
           <NewAlbum />
+          <RankingList />
         </div>
-        <div className={styles.recommendRight}></div>
+        <div className={styles.recommendRight}>
+          <Sidebar />
+        </div>
       </div>
     </div>
   )

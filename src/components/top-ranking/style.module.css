@@ -1,0 +1,62 @@
+.rankListWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 196px;
+  height: 500px;
+  padding: 20px;
+}
+
+.rankListContainer {
+  width: 100%;
+  color: #fff;
+}
+
+.rankListTop {
+  letter-spacing: 2px;
+  padding-bottom: 12px;
+}
+
+.rankTopTitle {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.rankTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.rankListContent {
+  font-size: 14px;
+}
+
+.rankSong {
+  cursor: pointer;
+}
+
+.songLink {
+  display: flex;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.rankNumber {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 12px;
+}
+
+.rankSongName {
+  font-size: 14px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

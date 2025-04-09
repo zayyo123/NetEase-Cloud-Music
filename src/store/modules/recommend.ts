@@ -25,22 +25,20 @@ export const fetchHotDataAction = createAsyncThunk('hot', async (args, { dispatc
 // 创建异步thunk，用于获取新专辑数据
 export const fetchNewAlbumAction = createAsyncThunk('new', async () => {
   const { data } = await getNewAlbum()
-  console.log(data)
   return data
 })
 
 // 创建异步thunk，用于获取排行榜数据
 export const fetchRankListAction = createAsyncThunk('rank', async () => {
-  const idList = [19723756, 3779629, 3778678, 2884035, 60198]
+  // const idList = [19723756, 3779629, 3778678, 2884035, 60198]
   const promiseFetchList: Promise<any>[] = []
-  for (const id of idList) {
-    promiseFetchList.push(getRankList(id))
-  }
+  promiseFetchList.push(getRankList(19723756))
+  // for (const id of idList) {
+  //   promiseFetchList.push(getRankList(id))
+  // }
   return Promise.all(promiseFetchList).then(res => {
     // map playlist
-    // console.log(res)
-    const playlist = res.filter(item => item.data.playlist).map(item => item.data.playlist)
-    return playlist
+    return res[0].data
   })
 })
 
