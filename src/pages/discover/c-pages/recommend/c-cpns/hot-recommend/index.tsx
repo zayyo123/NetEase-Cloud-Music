@@ -35,7 +35,6 @@ const HotRecommend = memo(() => {
     }),
     shallowEqual
   )
-  console.log(recommends)
   // 获取dispatch和navigate
 
   const navigate = useNavigate()

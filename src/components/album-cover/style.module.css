@@ -1,0 +1,110 @@
+/* 容器 */
+.newAlbumItemWrapper {
+  width: 180px;
+  padding-top: 28px;
+}
+
+.newAlbumCover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin-right: 12px;
+}
+
+/* 封面容器 */
+.coverContainer {
+  position: relative;
+  left: 0;
+  width: 110px;
+  height: 100px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.coverContainer:hover .iconPlay {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.coverContainer:hover .itemMask {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+/* 遮罩层 */
+.itemMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+
+/* 封面图片 */
+.coverImg {
+  width: 110px;
+  height: 100px;
+}
+
+.coverImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 播放图标 */
+.iconPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #f3f3f3;
+  opacity: 0;
+}
+
+/* 唱片图标 */
+.recordIcon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  padding: 10px 6px;
+  background: url('@/assets/img/sprite_cover.png') no-repeat;
+  background-position: -18px -570px;
+}
+
+.recordIcon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 专辑信息 */
+.albumInfo {
+  width: 110px;
+  height: 50px;
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.albumName {
+  font-size: 14px;
+  color: #555555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.albumSinger {
+  font-size: 13px;
+  color: grey;
+}
+
+.albumSingerSecondary {
+  padding-top: 12px;
+}

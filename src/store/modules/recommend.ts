@@ -25,6 +25,7 @@ export const fetchHotDataAction = createAsyncThunk('hot', async (args, { dispatc
 // 创建异步thunk，用于获取新专辑数据
 export const fetchNewAlbumAction = createAsyncThunk('new', async () => {
   const { data } = await getNewAlbum()
+  console.log(data)
   return data
 })
 
@@ -104,7 +105,7 @@ const recommendSlice = createSlice({
       })
       // 当fetchNewAlbumAction.fulfilled被触发时，将payload.products赋值给state.newAlbum
       .addCase(fetchNewAlbumAction.fulfilled, (state, { payload }) => {
-        state.newAlbum = payload.products
+        state.newAlbum = payload
       })
       // 当fetchRankListAction.fulfilled被触发时，将payload赋值给state.rankList
       .addCase(fetchRankListAction.fulfilled, (state, { payload }) => {
@@ -112,7 +113,7 @@ const recommendSlice = createSlice({
       })
       // 当fetchMVListAction.fulfilled被触发时，将payload.result赋值给state.mvList
       .addCase(fetchMVListAction.fulfilled, (state, { payload }) => {
-        state.mvList = payload.result
+        state.mvList = payload
       })
   }
 })

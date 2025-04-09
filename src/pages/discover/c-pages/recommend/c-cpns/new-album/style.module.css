@@ -1,0 +1,91 @@
+.albumWrapper {
+  margin-top: 50px;
+}
+
+.content {
+  height: 186px;
+  background-color: #f5f5f5;
+  border: 1px solid #d3d3d3;
+  margin: 20px 0 37px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 30px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  background-position: -260px -75px;
+}
+
+.arrowRight {
+  background-position: -300px -75px;
+}
+
+.album {
+  width: 640px;
+  height: 150px;
+}
+
+.album :global(.ant-carousel .slick-slide) {
+  height: 150px;
+  overflow: hidden;
+}
+
+.page {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  height: 184px;
+  padding-left: 16px;
+  background: #f5f5f5;
+  border: 1px solid #fff;
+}
+
+.newContent {
+  margin: 20px 0 37px;
+  border: 1px solid #d3d3d3;
+}
+
+.newAlbumContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newAlbumList {
+  display: flex;
+  gap: 110px;
+}
+
+.iconfont {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  background: url('@/assets/img/sprite_02.png') 0 9999px no-repeat; /* 初始状态隐藏 */
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: rgb(16, 16, 16);
+  font-size: 80px;
+  font-weight: bolder;
+}
+.iconfont:hover {
+  cursor: pointer;
+}
+.iconfont.iconPrev {
+  background-position: -260px -75px;
+  left: -20px;
+}
+.iconfont.iconNext {
+  background-position: -300px -75px;
+  position: absolute;
+
+  right: -1px;
+}
