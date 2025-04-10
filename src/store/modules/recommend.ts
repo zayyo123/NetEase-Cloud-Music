@@ -1,3 +1,4 @@
+// 获取请求接口数据后存储在redux中
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import {
   getTopBanner,
@@ -18,7 +19,6 @@ export const fetchBannersDataAction = createAsyncThunk('banners', async () => {
 // 创建异步thunk，用于获取热门推荐数据
 export const fetchHotDataAction = createAsyncThunk('hot', async (args, { dispatch }) => {
   const { data } = await getHotRecommend(8)
-
   return data
 })
 

@@ -1,8 +1,7 @@
+// 侧边栏组件
 import React from 'react'
 import styles from './style.module.css'
-import disVipCardImg from '../../../../style/web2/img/dis_vip_card.png'
 
-// Type definitions
 interface Singer {
   id: string
   imageUrl: string

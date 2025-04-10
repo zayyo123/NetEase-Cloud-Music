@@ -1,4 +1,4 @@
-import React, { memo, useRef } from 'react'
+import { memo, useRef } from 'react'
 import type { ComponentRef, FC, ReactNode } from 'react'
 import { appShallowEqual, useAppSelector } from '@/store'
 

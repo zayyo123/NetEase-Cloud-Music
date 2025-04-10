@@ -1,3 +1,4 @@
+// 新碟上架，单个组件
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 import style from './style.module.css'

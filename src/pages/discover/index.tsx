@@ -12,11 +12,13 @@ export default memo(function Discover() {
   const [discoverMenu, setDiscoverMenu] = useState<discoverMenuItem[]>([])
 
   useEffect(() => {
+    // 异步获取 discoverMenu 数据
     const discoverMenuInfo = async () => {
       try {
         const res = await request.get({
           url: '/discoverMenu'
         })
+        // 判断返回的数据是否为数组
         if (Array.isArray(res.data)) {
           setDiscoverMenu(res.data as discoverMenuItem[])
         } else {
@@ -29,7 +31,7 @@ export default memo(function Discover() {
       }
     }
     discoverMenuInfo()
-  }, [])
+  }, []) // 空数组作为依赖，只在组件挂载时执行一次
 
   return (
     <div className={styles.discoverWrapper}>

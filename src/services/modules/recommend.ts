@@ -1,5 +1,6 @@
 import request from '..'
 
+// recommend模块的请求函数
 export function getTopBanner() {
   return request.get({
     url: '/banner'

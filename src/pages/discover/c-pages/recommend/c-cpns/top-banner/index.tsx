@@ -1,3 +1,4 @@
+// 顶栏轮播图组件
 import { memo, useState, useRef, useCallback } from 'react'
 import type { FC, ComponentRef } from 'react'
 import { useAppSelector } from '@/store'

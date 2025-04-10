@@ -1,21 +1,25 @@
-import React, { memo } from 'react'
+// 单个榜单组件
+import { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 import styles from './style.module.css'
 import { useAppDispatch } from '@/store'
 import { fetchCurrentSongAction } from '@/store/modules/player'
 import { Link } from 'react-router-dom'
 
+// 定义Props接口
 interface IProps {
   children?: ReactNode
   item: ItemType
 }
 
+// 定义ItemType接口
 type ItemType = {
   name?: string
   tracks?: any
   coverImgUrl?: string
 }
 
+// 定义song接口
 interface song {
   name: string
   mainTitle: unknown
@@ -24,6 +28,7 @@ interface song {
   pst: number
 }
 
+// 定义RankList组件
 const RankList: FC<IProps> = props => {
   const { item } = props
   const { tracks, coverImgUrl } = item
@@ -34,11 +39,10 @@ const RankList: FC<IProps> = props => {
     dispatch(fetchCurrentSongAction(id))
   }
 
-  // Set the background image dynamically as inline style
+  // 设置背景图片样式
   const backgroundStyle = {
     backgroundImage: `url(${coverImgUrl + '?imageView&blur=40x20'})`
   }
-  console.log(tracks)
 
   return (
     <div className={styles.rankListWrapper} style={backgroundStyle}>
@@ -49,7 +53,11 @@ const RankList: FC<IProps> = props => {
         </div>
         <div className={styles.rankListContent}>
           {tracks.map((song: song, index: number) => (
-            <div key={song.id} className={styles.rankSong} onClick={() => handlePlaySong(song.id)}>
+            <div
+              key={song.name}
+              className={styles.rankSong}
+              onClick={() => handlePlaySong(song.id)}
+            >
               <Link to={`/player/${song.id}`} className={styles.songLink}>
                 <div className={styles.rankNumber}>{index + 1}</div>
                 <div className={`${styles.rankSongName} ${styles.ellipsis}`}>{song.name}</div>

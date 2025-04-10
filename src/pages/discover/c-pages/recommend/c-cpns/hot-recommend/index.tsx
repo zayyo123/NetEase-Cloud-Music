@@ -1,39 +1,22 @@
-import { memo, useCallback, useState } from 'react'
-import { useDispatch, useSelector, shallowEqual } from 'react-redux'
+import { memo, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useAppSelector, appShallowEqual } from '@/store'
 
 // 引入样式
 import style from './style.module.css'
 
-// 引入主题头部组件和主题封面组件
+// 引入主题标题组件和热梦封面组件
 import ThemeHeaderRCM from '@/components/theme-header-rcm'
 import ThemeCover from '@/components/theme-cover'
 
-interface PersonalizedItem {
-  id: number
-  type: number
-  name: string
-  copywriter: string
-  picUrl: string
-  canDislike: boolean
-  trackNumberUpdateTime: number
-  playCount: number
-  trackCount: number
-  highQuality: boolean
-  alg: string
-}
-
 // 热门推荐组件
 const HotRecommend = memo(() => {
-  // redux hooks
-  const [curIndex, setCurIndex] = useState(0)
   // 从redux中获取推荐数据
-  const { recommends } = useSelector(
+  const { recommends } = useAppSelector(
     state => ({
       recommends: state.recommend.hot
-      // recommends: state.recommend as PersonalizedItem[]
     }),
-    shallowEqual
+    appShallowEqual
   )
   // 获取dispatch和navigate
 
@@ -42,7 +25,7 @@ const HotRecommend = memo(() => {
   // 点击关键词跳转
   const keywordClick = useCallback(() => {
     navigate('/discover/songs')
-  }, [navigate])
+  }, [])
 
   return (
     <div className={style.recommendWrapper}>
