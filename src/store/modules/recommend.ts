@@ -108,6 +108,7 @@ const recommendSlice = createSlice({
       // 当fetchRankListAction.fulfilled被触发时，将payload赋值给state.rankList
       .addCase(fetchRankListAction.fulfilled, (state, { payload }) => {
         state.rankList = payload
+        console.log(payload)
       })
       // 当fetchMVListAction.fulfilled被触发时，将payload.result赋值给state.mvList
       .addCase(fetchMVListAction.fulfilled, (state, { payload }) => {

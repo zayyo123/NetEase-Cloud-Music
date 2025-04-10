@@ -1,0 +1,72 @@
+.hotItem {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 28px 0;
+  transition: 0.2s ease;
+}
+
+.itemTop {
+  position: relative;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.itemImg {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.itemImg:hover .itemImgBox > img {
+  transition: all 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.itemImg:hover .iconfont {
+  transition: all 0.3s ease-in;
+  opacity: 1;
+}
+
+.iconfont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s ease;
+  font-size: 56px;
+  color: #f5f5f5;
+}
+
+.itemImgBox {
+  width: 100%;
+}
+
+.itemImgBox img {
+  width: 100%;
+}
+
+.itemCount {
+  position: absolute;
+  bottom: 12px;
+  left: 0px;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 0;
+  text-align: center;
+  background: rgba(200, 200, 200, 0.3);
+}
+
+.itemBottom {
+  font-size: 14px;
+  color: #424242;
+}
+
+.itemTitle {
+  display: flex;
+  margin-bottom: 12px;
+}
