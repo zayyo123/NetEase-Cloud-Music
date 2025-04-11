@@ -8,16 +8,19 @@ interface IStateThunk {
 }
 
 // 获取radio数据
-export const fetchRadioAction = createAsyncThunk<void, number, IStateThunk>('radiolist', async (page, { dispatch, getState }) => {
-  // 获取limit
-  // const limit = getState().radio.limit
-  const limit = 28
-  const offset = page !== 0 ? (page - 1) * limit : 0
-  // 发送请求
-  const { data } = await getRadio({ offset })
-  // dispatch数据
-  dispatch(changeRadiolistAction(data.djRadios))
-})
+export const fetchRadioAction = createAsyncThunk<void, number, IStateThunk>(
+  'radiolist',
+  async (page, { dispatch, getState }) => {
+    // 获取limit
+    // const limit = getState().radio.limit
+    const limit = 28
+    const offset = page !== 0 ? (page - 1) * limit : 0
+    // 发送请求
+    const { data } = await getRadio({ offset })
+    // dispatch数据
+    dispatch(changeRadiolistAction(data))
+  }
+)
 
 // state接口
 interface IRadioState {
@@ -28,7 +31,7 @@ interface IRadioState {
 // 初始数据
 const initialState: IRadioState = {
   radiolist: [],
-  limit: 28,
+  limit: 28
 }
 
 const radioSlice = createSlice({
@@ -37,8 +40,8 @@ const radioSlice = createSlice({
   reducers: {
     changeRadiolistAction(state, { payload }) {
       state.radiolist = payload
-    },
-  },
+    }
+  }
 })
 
 // 导出reducers

@@ -1,0 +1,12 @@
+.newAlbumWrapper {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.newAlbumContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.newAlbumItem {
+  margin: 12px 24px;
+}

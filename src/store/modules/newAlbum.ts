@@ -8,32 +8,38 @@ interface IThunkState {
 }
 
 // 获取新碟上架数据
-export const fetchNewAlbumListAction = createAsyncThunk('newAlbumList', async (args, { dispatch }) => {
-  const { data } = await getNewAlbum()
-  dispatch(changeNewAlbumListAction(data.albums))
-})
+export const fetchNewAlbumListAction = createAsyncThunk(
+  'newAlbumList',
+  async (args, { dispatch }) => {
+    const { data } = await getNewAlbum()
+    dispatch(changeNewAlbumListAction(data.albums))
+  }
+)
 
 // 获取全部新碟
-export const fetchAllNewAlbumListAction = createAsyncThunk<void, number, IThunkState>('allNewAlbumList', async (page, { dispatch, getState }) => {
-  // page
-  const limit = 35
-  const offset = page !== 0 ? (page - 1) * limit : 0
-  const { data } = await getAllNewAlbum({ offset: offset })
-  // const oldlist = getState().newAlbum.newAlbumList
-  // const newlist = [...oldlist, ...data.albums]
-  // dispatch(changeNewAlbumListAction(newlist))
+export const fetchAllNewAlbumListAction = createAsyncThunk<void, number, IThunkState>(
+  'allNewAlbumList',
+  async (page, { dispatch, getState }) => {
+    // page
+    const limit = 35
+    const offset = page !== 0 ? (page - 1) * limit : 0
+    const { data } = await getAllNewAlbum({ offset: offset })
+    // const oldlist = getState().newAlbum.newAlbumList
+    // const newlist = [...oldlist, ...data.albums]
+    // dispatch(changeNewAlbumListAction(newlist))
 
-  // page
+    // page
 
-  dispatch(changeNewAlbumListAction(data.albums))
-})
+    dispatch(changeNewAlbumListAction(data))
+  }
+)
 
 interface INewAlbum {
   newAlbumList: any[]
 }
 
 const initialState: INewAlbum = {
-  newAlbumList: [],
+  newAlbumList: []
 }
 
 const newAlbumSlice = createSlice({
@@ -42,8 +48,8 @@ const newAlbumSlice = createSlice({
   reducers: {
     changeNewAlbumListAction(state, { payload }) {
       state.newAlbumList = payload
-    },
-  },
+    }
+  }
 })
 
 export const { changeNewAlbumListAction } = newAlbumSlice.actions

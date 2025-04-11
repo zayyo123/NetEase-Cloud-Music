@@ -6,7 +6,7 @@ export const fetchSingerlistAction = createAsyncThunk('singerlist', async (args,
   // 调用接口
   const { data } = await getSingerlist()
   // 通过 dispatch 调用 reducer, 更改state数据
-  dispatch(changeSingerlistAction(data.artists))
+  dispatch(changeSingerlistAction(data))
 })
 
 interface ISingerState {
@@ -16,7 +16,7 @@ interface ISingerState {
 
 const initialState: ISingerState = {
   singerlist: [],
-  singer: {},
+  singer: {}
 }
 
 const singerSlice = createSlice({
@@ -25,8 +25,8 @@ const singerSlice = createSlice({
   reducers: {
     changeSingerlistAction(state, { payload }) {
       state.singerlist = payload
-    },
-  },
+    }
+  }
 })
 
 // 到处reducers

@@ -1,1 +1,5 @@
 import './modules/recommend'
+import './modules/songlist'
+import './modules/djradio'
+import './modules/singer'
+import './modules/newAlbum'

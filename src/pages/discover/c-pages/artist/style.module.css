@@ -1,0 +1,21 @@
+.singerWrapper {
+  width: 1190px;
+  margin: 0 auto;
+}
+.singerlistHot {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.avatarContainer {
+  /* padding: 12px 40px; */
+  margin: 14px 40px;
+}
+.singerlistCommon span {
+  display: inline-block;
+  width: 146px;
+  padding: 12px 24px;
+  margin: 12px;
+}

@@ -1,0 +1,11 @@
+.radioWrapper {
+  width: 1190px;
+  margin: 0 auto;
+}
+.radioList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.radioListItem {
+  margin: 12px 28px;
+}
