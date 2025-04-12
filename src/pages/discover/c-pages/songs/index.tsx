@@ -38,7 +38,7 @@ const Songlist: FC<IProps> = () => {
 
   return (
     <div className={style.songlistWrapper}>
-      <div>热门歌单</div>
+      <div className='section_title'>热门歌单</div>
       <div className={style.songlistContainer}>
         {playlist.map(item => (
           <div key={item.id} className={style.songlistItem}>

@@ -1,6 +1,11 @@
 .newAlbumWrapper {
-  width: 1190px;
   margin: 0 auto;
+  width: 980px;
+  min-height: 700px;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  padding: 40px;
 }
 
 .newAlbumContainer {
@@ -8,5 +13,5 @@
   flex-wrap: wrap;
 }
 .newAlbumItem {
-  margin: 12px 24px;
+  margin: 12px 22px;
 }

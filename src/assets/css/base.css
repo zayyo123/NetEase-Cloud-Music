@@ -188,3 +188,15 @@ span:hover.link {
   background: rgba(165, 4, 4, 0.991) !important; /* 激活颜色 */
   border-radius: 100% !important; /* 关键圆形属性 */
 }
+
+.section_title {
+  font-size: 20px;
+  padding-bottom: 24px;
+  height: 40px;
+  border-bottom: 2px solid #c20c0c;
+}
+
+.ant-pagination {
+  list-style-image: initial;
+  justify-content: center;
+}

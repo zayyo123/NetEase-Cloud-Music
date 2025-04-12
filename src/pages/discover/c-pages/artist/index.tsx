@@ -32,7 +32,7 @@ const Singer: FC<IProps> = () => {
       <div className='section_title'>热门歌手</div>
       <div className={style.singerlistHot}>
         {singerlist.slice(0, 10).map(item => (
-          <div className='avatar-container' key={item.id}>
+          <div className={style.avatarContainer} key={item.id}>
             <Avatar picUrl={item.picUrl} name={item.name} />
           </div>
         ))}

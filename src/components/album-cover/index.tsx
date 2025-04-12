@@ -24,7 +24,7 @@ type ItemType = {
 
 // 定义专辑封面组件
 const AlbumCover: FC<IProps> = props => {
-  const { item } = props
+  const { item, width = 180 } = props
   // 获取图片尺寸
   const imageSize = getImageSize(item.picUrl || item.coverUrl || '', 180)
 

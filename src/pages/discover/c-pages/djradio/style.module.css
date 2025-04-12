@@ -1,6 +1,10 @@
 .radioWrapper {
-  width: 1190px;
+  width: 980px;
+  min-height: 700px;
   margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  padding: 40px;
 }
 .radioList {
   display: flex;
