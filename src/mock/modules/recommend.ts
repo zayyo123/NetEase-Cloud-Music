@@ -19,7 +19,7 @@ Mock.mock('/api/headerLinks', 'get', {
     },
     {
       title: '关注',
-      link: '/https://music.163.com/?from=infinity#/friend'
+      link: '/friend'
     },
     {
       title: '商城',

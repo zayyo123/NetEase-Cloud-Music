@@ -1,0 +1,41 @@
+.gBdFull {
+  width: 980px;
+  min-height: 700px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  padding-top: 104px;
+}
+
+.nPglg {
+  background: url(@/assets/img/mine/mymusic.png) no-repeat;
+
+  width: 807px;
+  height: 268px;
+  margin: 0 auto 0;
+}
+
+.pic {
+  text-align: center;
+}
+
+.pic h2 {
+  height: 100px;
+  text-indent: -9999px;
+}
+
+.btn {
+  background: url(@/assets/img/mine/mymusic.png) no-repeat;
+  display: block;
+  width: 167px;
+  height: 45px;
+  margin: 102px 0 0 482px;
+  background-position: 0 9999px;
+  text-indent: -9999px;
+}
+
+.btn:hover {
+  background-position: 0 -278px;
+}

@@ -1,0 +1,43 @@
+.gBdFull {
+  width: 980px;
+  min-height: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  padding-top: 70px;
+}
+
+.nPglg2 {
+  width: 902px;
+  height: 414px;
+  background: url(@/assets/img/friend/notlogin.jpg) no-repeat;
+  margin: 0 auto 0;
+}
+
+.welc {
+  padding: 178px 0 0 535px;
+  line-height: 23px;
+}
+
+.sFc3 {
+  color: #666;
+}
+
+.fFs1 {
+  color: #666;
+}
+
+.btn {
+  display: block;
+  background: url(@/assets/img/friend/notlogin.jpg) no-repeat;
+  width: 157px;
+  height: 48px;
+  margin: 36px 0 0 535px;
+  background-position: 0 9999px;
+  text-indent: -9999px;
+}
+
+.btn:hover {
+  background-position: 0 -430px;
+}
