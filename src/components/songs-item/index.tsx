@@ -3,11 +3,13 @@ import type { FC, ReactNode } from 'react'
 import styles from './style.module.css'
 import { formatterNumber, getImageSize } from '@/utils'
 
+// 定义组件的props类型
 interface IProps {
   children?: ReactNode
   item: itemType
 }
 
+// 定义item的类型
 type itemType = {
   key?: string
   name?: string
@@ -18,18 +20,23 @@ type itemType = {
   coverImgUrl?: string
 }
 
+// 定义组件
 const SongsItemV1: FC<IProps> = memo(props => {
   const { item } = props
+  // 如果item有width属性，则使用item.width，否则使用220
   const itemWidth = item.width || 220
 
+  // 定义容器的样式
   const containerStyle = {
     width: `${itemWidth}px`
   }
 
+  // 定义图片容器的样式
   const imageContainerStyle = {
     height: `${itemWidth}px`
   }
 
+  // 定义图片的样式
   const imageStyle = {
     height: `${itemWidth}px`
   }
@@ -68,6 +75,8 @@ const SongsItemV1: FC<IProps> = memo(props => {
   )
 })
 
+// 设置组件的displayName
 SongsItemV1.displayName = 'SongsItemV1'
 
+// 导出组件
 export default SongsItemV1

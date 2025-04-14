@@ -4,12 +4,14 @@ import styles from './style.module.css'
 import recordIcon from '@/assets/img/record_icon.png'
 import { getImageSize } from '@/utils'
 
+// 定义组件的props类型
 interface IProps {
   children?: ReactNode
   item: ItemType
   width?: string | number
 }
 
+// 定义item的类型
 type ItemType = {
   key?: string
   albumId?: number
@@ -21,10 +23,13 @@ type ItemType = {
   name?: string
 }
 
+// 定义组件
 const NewAlbumItem: FC<IProps> = props => {
   const { item } = props
+  // 设置默认宽度
   const itemWidth = props.width ?? 180
 
+  // 设置样式
   const wrapperStyle = {
     width: `${itemWidth}px`
   }
@@ -64,6 +69,8 @@ const NewAlbumItem: FC<IProps> = props => {
   )
 }
 
+// 设置组件的显示名称
 NewAlbumItem.displayName = 'NewAlbumItem'
 
+// 导出组件
 export default memo(NewAlbumItem)

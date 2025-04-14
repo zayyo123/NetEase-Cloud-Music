@@ -17,7 +17,7 @@ const Avatar: FC<IProps> = props => {
   // 头像图片
   const pic = picUrl ? `${picUrl}?param=120y120` : RecordIcon
 
-  // Create dynamic styles for the avatar size
+  // 创建动态样式
   const avatarImgStyle = {
     width: `${width}px`,
     height: `${width}px`

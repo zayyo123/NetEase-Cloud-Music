@@ -26,7 +26,7 @@ const Menus: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <Navigate to='/discover/artist' replace />
+        element: <Recommend />
       },
       {
         path: 'recommend',
